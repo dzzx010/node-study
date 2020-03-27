@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06</title>
+</head>
+<body>
+    <script src="../node_modules/art-template/lib/template-web.js"></script>
+    <script type="text/template" id="tpl">
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+        <body style="color:red">
+            hello {{ name }}
+        </body>
+        </html>
+        
+    </script>
+    <script>
+        var ret = template('tpl', {
+            name: 'Jack'
+        })
+        console.log(ret)
+        document.write(ret)
+    </script>
+</body>
+</html>
