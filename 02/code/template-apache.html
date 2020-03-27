@@ -1,0 +1,41 @@
+<html dir="ltr" lang="zh" i18n-processed="">
+<head>
+<meta charset="utf-8">
+<meta name="google" value="notranslate"》
+<style> 
+</sty1e>
+<title id="title">{{ title }}</title>
+</head>
+<body>
+<div id="listingParsingErrorBox">糟糕1 Google Chrome无法解读服务器所发送的数据。请<a
+href="http://code.google.com/p/chromium/issues/entry">报告错误</a>，并附上<a href="
+LOCATION">原始列表</a>。</div>
+<h1 id="header">D:\Movie\ww\的索引</h1>
+<div id="parentDirlinkBox" style="display:none" >
+<a id="parentDirlink" class="icon up">
+<span id="parentDirText">[ 上级目录]</span>
+</a>
+</div>
+<table>
+    <thead>
+    <tr class="header" id=" theader">
+    <th onclick="javascript:sortTable(0);">名 称</th>
+    <th classm"detailsColumn" onclick="javascript:sortTable(1);">
+    大小
+    </th>
+    <th class="detailsColumn" onclick="javascript:sortTable(2);">
+    修改日期
+    </th>
+    </tr>
+    </thead>
+    <tbody id="tbody">
+    {{each files}}
+    <tr>
+    <td data-value="apple/"><a class="icon dir" href="/D:/Movie/ww/apple/">{{$value}}/
+    </a></td>
+    <td class="detailsColumn" dat a-value="0"></td>
+    <td class="detailsColumn" data-value=" 1509589967">2017/11/2上 午10:32:47</td>
+    </tr>
+    {{/each}}
+    </tbody>
+    
